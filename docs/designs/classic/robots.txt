@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+# Private design review. Set indexable after choosing a final production version.
+Sitemap: https://eliteflow-classic-woodbridge.feyknoll512.chatgpt.site/sitemap.xml

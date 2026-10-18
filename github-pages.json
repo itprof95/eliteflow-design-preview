@@ -1,0 +1,17 @@
+{
+  "owner": "itprof95",
+  "repository": "eliteflow-design-preview",
+  "base_path": "/eliteflow-design-preview/",
+  "pages_source": {
+    "branch": "main",
+    "path": "/docs"
+  },
+  "expected_url": "https://itprof95.github.io/eliteflow-design-preview/",
+  "website_designs": 5,
+  "website_pages": 90,
+  "checked_links_assets_fragments": 6596,
+  "automatic_customer_submissions_enabled": false,
+  "files": 449,
+  "total_bytes": 19867403,
+  "gallery_sha256": "7d27fb37121e6b7683e4ba29bd5720b6ec0f31c112f54c3845f0d33b9b6f25af"
+}

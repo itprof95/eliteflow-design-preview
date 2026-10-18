@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.tools/
+.openai/
+*.zip
+*.tar.gz
+*.log
+.DS_Store
+Thumbs.db

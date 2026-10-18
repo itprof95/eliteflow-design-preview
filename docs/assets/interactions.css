@@ -1,0 +1,51 @@
+/* Shared, restrained interaction details for the five responsive designs. */
+:root{--flow-ease:cubic-bezier(.22,.61,.36,1);--flow-duration:420ms}
+.design-atelier,.design-reserve{--flow-duration:600ms}
+.design-current{--flow-duration:320ms}
+.button,.menu-toggle,.text-link,.all-services-link,.preview-button,.service-sample{transition:background-color .2s,color .2s,border-color .2s,box-shadow .25s,transform .25s var(--flow-ease)}
+.button .icon,.text-link .icon,.all-services-link .icon,.concept-sample .icon{transition:transform .25s var(--flow-ease)}
+.concept-sample,.service-card,.editorial-service,.request-options label{transition:transform .3s var(--flow-ease),box-shadow .3s,border-color .25s,background-color .25s}
+.concept-sample img,.service-image img,.editorial-image img{transition:transform .6s var(--flow-ease)}
+.concept-sample>a:has(img),.service-image,.editorial-image{overflow:hidden}
+.header-inner nav>a:not(.button){background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-position:left bottom;background-repeat:no-repeat;transition:background-size .25s,color .2s}
+.faq-list summary .icon,.services-menu summary .icon{transition:transform .25s var(--flow-ease)}
+.services-menu[open]>summary>.icon{transform:rotate(180deg)}
+.field input,.field select,.field textarea{transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{box-shadow:0 0 0 4px #285ce51c}
+.flow-enter{transition:opacity var(--flow-duration) var(--flow-ease),transform var(--flow-duration) var(--flow-ease),box-shadow .3s,border-color .25s,background-color .25s}
+.flow-enter.flow-pending{opacity:0;transform:translateY(18px)}
+.flow-enter.flow-pending:focus-within{opacity:1;transform:none}
+.service-card,.concept-sample,.contact-sidebar,.request-panel{min-width:0}
+.contact-sidebar a,.footer-grid a{overflow-wrap:anywhere}
+.footer-bottom>div{flex-wrap:wrap}
+.map-container.auto-map{height:auto;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:16px;padding:22px;text-align:left}
+.map-container.auto-map h3{margin:0;font-size:23px}
+.map-container.auto-map p{margin:0;font-size:12px}
+.map-container.auto-map iframe{display:block;width:100%;height:380px;min-height:0;border:1px solid var(--line);border-radius:var(--radius);background:var(--light)}
+.map-container.auto-map .text-link{justify-content:flex-start}
+.concept-home>section:first-child figure{overflow:hidden}
+.flow-hero-copy{animation:flow-hero-copy 350ms var(--flow-ease) backwards}
+.flow-hero-step-1{animation-delay:40ms}.flow-hero-step-2{animation-delay:80ms}.flow-hero-step-3{animation-delay:120ms}.flow-hero-step-4{animation-delay:160ms}
+.flow-hero-visual{animation:flow-hero-image 800ms var(--flow-ease) backwards;transition:transform 900ms var(--flow-ease)}
+.design-atelier .flow-hero-visual{animation-duration:750ms}
+.design-current .flow-hero-visual{animation-duration:650ms}
+.design-reserve .flow-hero-visual{animation-duration:900ms}
+@keyframes flow-hero-copy{from{opacity:1;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes flow-hero-image{from{opacity:1;transform:scale(1.025)}to{opacity:1;transform:scale(1)}}
+@media(hover:hover) and (pointer:fine){
+ .button:hover,.menu-toggle:hover{transform:translateY(-2px);box-shadow:0 6px 18px #142d4520}
+ .button:hover>.icon,.text-link:hover>.icon,.all-services-link:hover>.icon{transform:translateX(4px)}
+ .header-inner nav>a:not(.button):hover,.header-inner nav>a[aria-current]{background-size:100% 1px}
+ .concept-sample:hover,.service-grid .service-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px #17355716}
+ .design-current .concept-sample:hover{transform:translateX(4px);box-shadow:none}
+ .design-atelier .concept-sample:hover,.design-reserve .concept-sample:hover{transform:translateY(-3px);box-shadow:none}
+ .concept-sample:hover img,.service-card:hover .service-image img,.editorial-service:hover img{transform:scale(1.035)}
+ .request-options label:hover{border-color:var(--accent,#285ce5);box-shadow:0 4px 16px #17355710}
+ .service-sample:hover{text-decoration-thickness:2px}
+ .form-hero .room-photo:hover .flow-hero-visual,.precision-visual:hover .flow-hero-visual{transform:scale(1.025)}
+}
+.button:active,.menu-toggle:active,.preview-button:active{transform:translateY(1px);box-shadow:none}
+.button,.menu-toggle,.mobile-actions a{min-height:44px}
+@media(max-width:600px){.flow-enter.flow-pending{transform:translateY(10px)}.request-options label{min-height:72px}.map-container.auto-map{padding:18px}.map-container.auto-map iframe{height:300px}.flow-hero-copy{animation-duration:350ms}.flow-hero-visual{animation-duration:650ms}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}.flow-enter.flow-pending,.flow-hero-copy,.flow-hero-visual{opacity:1;transform:none!important}.button:hover,.concept-sample:hover,.service-card:hover,.button:active,.menu-toggle:active,.preview-button:active{transform:none!important}}
+@media print{.flow-enter.flow-pending,.flow-hero-copy,.flow-hero-visual{opacity:1;transform:none;animation:none!important}}
