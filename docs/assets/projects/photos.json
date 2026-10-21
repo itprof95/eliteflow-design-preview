@@ -1,0 +1,218 @@
+[
+  {
+    "key": "tankless-water-heater",
+    "title": "Tankless water heater",
+    "alt": "A wall-mounted tankless water heater with copper connections and white vent pipework",
+    "source": "User-supplied Eliteflow project photo",
+    "sourceFilename": "WhatsApp Image 2026-10-20 at 20.29.55 (1).jpeg",
+    "variants": [
+      {
+        "file": "tankless-water-heater-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 76694
+      },
+      {
+        "file": "tankless-water-heater-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 180590
+      },
+      {
+        "file": "tankless-water-heater-1071.webp",
+        "width": 1071,
+        "height": 1428,
+        "bytes": 261478
+      }
+    ]
+  },
+  {
+    "key": "wall-mounted-water-heater",
+    "title": "Water heater connections",
+    "alt": "A wall-mounted water heater with venting and insulated pipe connections",
+    "source": "User-supplied Eliteflow project photo",
+    "sourceFilename": "WhatsApp Image 2026-10-20 at 20.29.55.jpeg",
+    "variants": [
+      {
+        "file": "wall-mounted-water-heater-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 24436
+      },
+      {
+        "file": "wall-mounted-water-heater-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 50540
+      },
+      {
+        "file": "wall-mounted-water-heater-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 87206
+      }
+    ]
+  },
+  {
+    "key": "storage-water-heater",
+    "title": "Storage water heater",
+    "alt": "A storage water heater with an expansion tank and connected vent pipework",
+    "source": "User-supplied Eliteflow project photo",
+    "sourceFilename": "WhatsApp Image 2026-10-20 at 20.29.56 (1).jpeg",
+    "variants": [
+      {
+        "file": "storage-water-heater-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 68000
+      },
+      {
+        "file": "storage-water-heater-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 149228
+      },
+      {
+        "file": "storage-water-heater-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 249460
+      }
+    ]
+  },
+  {
+    "key": "copper-pipes-valves",
+    "title": "Copper pipes and valves",
+    "alt": "Copper pipe joints and isolation valves beside a water heater",
+    "source": "User-supplied Eliteflow project photo",
+    "sourceFilename": "WhatsApp Image 2026-10-20 at 20.29.56.jpeg",
+    "variants": [
+      {
+        "file": "copper-pipes-valves-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 39334
+      },
+      {
+        "file": "copper-pipes-valves-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 79250
+      },
+      {
+        "file": "copper-pipes-valves-1071.webp",
+        "width": 1071,
+        "height": 1428,
+        "bytes": 114782
+      }
+    ]
+  },
+  {
+    "key": "supply-pipework",
+    "title": "Water supply pipework",
+    "alt": "Water supply pipes, valves and an expansion tank mounted against an unfinished wall",
+    "source": "User-supplied Eliteflow project photo",
+    "sourceFilename": "WhatsApp Image 2026-10-20 at 20.30.27.jpeg",
+    "variants": [
+      {
+        "file": "supply-pipework-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 31744
+      },
+      {
+        "file": "supply-pipework-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 61894
+      },
+      {
+        "file": "supply-pipework-1071.webp",
+        "width": 1071,
+        "height": 1428,
+        "bytes": 88484
+      }
+    ]
+  },
+  {
+    "key": "pipework-installation",
+    "title": "Pipework during installation",
+    "alt": "Vertical and horizontal supply pipes being installed along an unfinished wall",
+    "source": "User-supplied Eliteflow project photo",
+    "sourceFilename": "WhatsApp Image 2026-10-20 at 20.30.28 (1).jpeg",
+    "variants": [
+      {
+        "file": "pipework-installation-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 23274
+      },
+      {
+        "file": "pipework-installation-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 45066
+      },
+      {
+        "file": "pipework-installation-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 74804
+      }
+    ]
+  },
+  {
+    "key": "heater-pipework",
+    "title": "Water heater and pipework",
+    "alt": "A wall-mounted storage water heater beside supply pipework and overhead drain pipes",
+    "source": "User-supplied Eliteflow project photo",
+    "sourceFilename": "WhatsApp Image 2026-10-20 at 20.30.28 (2).jpeg",
+    "variants": [
+      {
+        "file": "heater-pipework-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 34566
+      },
+      {
+        "file": "heater-pipework-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 71080
+      },
+      {
+        "file": "heater-pipework-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 113868
+      }
+    ]
+  },
+  {
+    "key": "valves-temperature-gauges",
+    "title": "Valves and temperature gauges",
+    "alt": "Pipework with isolation valves, temperature gauges and a small expansion tank",
+    "source": "User-supplied Eliteflow project photo",
+    "sourceFilename": "WhatsApp Image 2026-10-20 at 20.30.28.jpeg",
+    "variants": [
+      {
+        "file": "valves-temperature-gauges-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 28014
+      },
+      {
+        "file": "valves-temperature-gauges-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 55672
+      },
+      {
+        "file": "valves-temperature-gauges-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 92150
+      }
+    ]
+  }
+]

@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /
+# Local development only. Approve the production domain before enabling indexing.
+Sitemap: https://itprof95.github.io/eliteflow-design-preview/sitemap.xml

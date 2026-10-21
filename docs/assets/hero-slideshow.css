@@ -1,0 +1,50 @@
+/* Automatic, decorative homepage photography. Content also works without JS. */
+[data-hero-slideshow] .hero-slide{opacity:0;transition:opacity 1s ease-in-out;pointer-events:none;overflow:hidden}
+[data-hero-slideshow] .hero-slide.is-active{opacity:1}
+[data-hero-slideshow] .hero-slide img{display:block;width:100%;height:100%;object-fit:cover}
+[data-hero-slideshow] .hero-slide[data-photo="bathroom"] img{object-position:70% 50%}
+[data-hero-slideshow] .hero-slide[data-photo="work-black"] img{object-position:68% 50%}
+[data-hero-slideshow] .hero-slide[data-photo="work-white"] img{object-position:70% 45%}
+[data-hero-slideshow].hero-motion-enabled .hero-slide:is(.is-active,.is-leaving) img{animation:hero-photo-zoom 5s linear both;will-change:transform}
+[data-hero-slideshow].hero-motion-enabled.hero-motion-paused .hero-slide img{animation-play-state:paused}
+@keyframes hero-photo-zoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+[data-hero-slideshow] .local-photo-shade{background:linear-gradient(90deg,#080d16d4 0%,#080d16bf 30%,#080d166b 50%,#080d1600 72%)}
+[data-hero-slideshow].local-hero{min-height:660px;padding:54px 0;background:#dedbd4}
+[data-hero-slideshow] .local-hero-copy{max-width:580px}
+[data-hero-slideshow] h1{font-size:clamp(46px,4.5vw,60px);line-height:1.08;letter-spacing:-.045em;text-shadow:0 2px 18px #0003}
+[data-hero-slideshow] h1 span{color:white}
+[data-hero-slideshow] .eyebrow{color:white;margin-bottom:22px}
+[data-hero-slideshow] .local-hero-copy>p:not(.eyebrow){max-width:500px;font-size:15px;line-height:1.75;color:#fff;margin-top:24px;text-shadow:0 1px 8px #0005}
+[data-hero-slideshow] .local-emergency{max-width:450px;margin-top:26px;padding-top:18px}
+[data-hero-slideshow] .local-emergency span,[data-hero-slideshow] .local-emergency>.icon{color:#fff}
+[data-hero-slideshow] .secondary{border-color:#ffffffb3;background:#10182059}
+.hero-copy-enter{animation:hero-copy-entrance 1s cubic-bezier(.22,.61,.36,1) backwards}
+.hero-copy-enter.hero-copy-heading{animation-delay:120ms}
+.hero-copy-enter.hero-copy-description{animation-delay:260ms}
+.hero-copy-enter.hero-copy-note{animation-delay:400ms}
+@keyframes hero-copy-entrance{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(max-width:900px){
+ [data-hero-slideshow].local-hero{min-height:640px;padding:56px 0;background:#102d50}
+ [data-hero-slideshow] .local-photo-shade{display:block;background:linear-gradient(90deg,#080d16d9 0%,#080d16bf 42%,#080d165c 74%,#080d1626 100%)}
+ [data-hero-slideshow] .hero-slide[data-photo="work-black"] img{object-position:65% 45%}
+ [data-hero-slideshow] .hero-slide[data-photo="work-white"] img{object-position:70% 45%}
+ [data-hero-slideshow] h1{font-size:clamp(36px,5.2vw,46px);line-height:1.1;max-width:100%}
+ [data-hero-slideshow] .eyebrow{font-size:10px;margin-bottom:18px}
+ [data-hero-slideshow] .local-hero-copy>p:not(.eyebrow){max-width:500px;font-size:14px;margin-top:20px}
+ [data-hero-slideshow] .actions{flex-direction:row;gap:12px;margin-top:24px}
+ [data-hero-slideshow] .actions .button{flex:1;padding:13px 15px;gap:12px}
+ [data-hero-slideshow] .local-emergency{max-width:100%;margin-top:24px}
+ .hero-copy-enter{animation-duration:900ms}
+}
+@media(max-width:600px){
+ [data-hero-slideshow].local-hero{display:flex;align-items:flex-end;min-height:680px;padding:130px 0 36px}
+ [data-hero-slideshow] .local-photo-shade{background:linear-gradient(180deg,#080d1600 0%,#080d1640 15%,#080d16b8 30%,#080d16e6 60%,#080d16f0 100%)}
+ [data-hero-slideshow] h1{font-size:clamp(34px,9vw,40px)}
+ [data-hero-slideshow] .local-hero-copy>p:not(.eyebrow){max-width:100%;line-height:1.65}
+}
+@media(prefers-reduced-motion:reduce){
+ [data-hero-slideshow] .hero-slide{transition:none}
+ [data-hero-slideshow] .hero-slide img{animation:none!important;transform:none!important}
+ .hero-copy-enter{animation:none;opacity:1;transform:none}
+}
+@media print{.hero-copy-enter{animation:none;opacity:1;transform:none}[data-hero-slideshow] .hero-slide img{animation:none!important;transform:none!important}}

@@ -3,7 +3,7 @@
   const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (preference.matches || !('IntersectionObserver' in window)) return;
   const hero = document.querySelector('.concept-home > section:first-child');
-  if (hero) {
+  if (hero && !hero.hasAttribute('data-hero-slideshow')) {
     const intro = hero.querySelector('.local-hero-copy > p:not(.eyebrow),.form-intro,.friendly-overlay-copy > p:not(.eyebrow),.precision-title > p:not(.eyebrow),.tide-overlay-description');
     const copy = [hero.querySelector('.eyebrow'),hero.querySelector('h1'),intro,
       hero.querySelector('.local-immersive-tag,.form-margin-note,.friendly-note,.precision-coordinate,.tide-overlay-about')];

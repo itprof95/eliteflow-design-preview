@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /
-# Private design review. Set indexable after choosing a final production version.
-Sitemap: http://127.0.0.1:4178/sitemap.xml
