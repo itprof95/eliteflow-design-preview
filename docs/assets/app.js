@@ -29,6 +29,18 @@
   const fallback = document.querySelector('#request-fallback');
   const photo = form.elements.photo;
   const emailDelivery = window.ELITEFLOW_CONFIG?.emailDelivery;
+  const commercialFields = document.querySelector('#commercial-fields');
+  function updatePropertyType() {
+    const commercial = form.elements.propertyType.value === 'Commercial';
+    commercialFields.hidden = !commercial;
+    commercialFields.querySelectorAll('input, textarea').forEach(field => {
+      field.disabled = !commercial;
+    });
+    form.elements.businessName.required = commercial;
+  }
+  form.querySelectorAll('input[name="propertyType"]').forEach(radio => {
+    radio.addEventListener('change', updatePropertyType);
+  });
   const showStatus = (message, type = 'error') => {
     status.textContent = message;
     status.className = `form-status ${type}`;
@@ -51,6 +63,15 @@
     });
   });
   const query = new URLSearchParams(location.search);
+  if (query.get('property') === 'commercial') {
+    form.querySelector('#property-commercial').checked = true;
+  }
+  updatePropertyType();
+  const industries = ['Restaurants & food service','Hotels & hospitality','Healthcare properties','Office buildings','Industrial & manufacturing properties','Retail & warehouses'];
+  const industry = query.get('industry');
+  if (form.elements.propertyType.value === 'Commercial' && industries.includes(industry) && !form.elements.siteDetails.value) {
+    form.elements.siteDetails.value = `Industry: ${industry}\nProperty / site details: `;
+  }
   const mode = query.get('request');
   if (['standard', 'emergency'].includes(mode)) {
     document.querySelector(`input[name="request-type"][value="${mode}"]`).checked = true;
@@ -82,9 +103,10 @@
   });
   form.elements.phone.addEventListener('input', () => form.elements.phone.setCustomValidity(''));
   function prepareFallback(data) {
-    const labels = {fullName:'Name',phone:'Phone',email:'Email',address:'Service address',zip:'ZIP',service:'Service',description:'Problem',date:'Preferred date (request only)',time:'Preferred time (request only)'};
-    const body = Object.entries(labels).map(([k,label]) => `${label}: ${String(data.get(k)||'No preference')}`).join('\n\n');
-    document.querySelector('#email-draft').href = `mailto:Liteflowservices@gmail.com?subject=${encodeURIComponent('Plumbing service request — '+data.get('service'))}&body=${encodeURIComponent(body+'\n\nThis is a standard request, not a confirmed appointment. Optional photos must be attached separately.')}`;
+    const labels = {propertyType:'Property type',businessName:'Business / organization',siteDetails:'Property / site details',fullName:'Name',phone:'Phone',email:'Email',address:'Service address',zip:'ZIP',service:'Service',description:'Problem',date:'Preferred date (request only)',time:'Preferred time (request only)'};
+    const body = Object.entries(labels).filter(([k]) => data.has(k)).map(([k,label]) => `${label}: ${String(data.get(k)||(['date','time'].includes(k)?'No preference':'Not provided'))}`).join('\n\n');
+    const subject = `${data.get('propertyType') === 'Commercial' ? 'Commercial plumbing' : 'Plumbing'} service request — ${data.get('service')}`;
+    document.querySelector('#email-draft').href = `mailto:Liteflowservices@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body+'\n\nThis is a standard request, not a confirmed appointment. Optional photos must be attached separately.')}`;
     fallback.hidden = false;
   }
   // FormSubmit's documented native multipart POST supports photo attachments
@@ -98,7 +120,7 @@
     returnUrl.searchParams.set('request','standard');
     returnUrl.searchParams.set('submitted','1');
     const fields = {
-      _subject:'Eliteflow — standard plumbing service request',
+      _subject:`Eliteflow — ${data.get('propertyType') === 'Commercial' ? 'commercial' : 'residential'} plumbing service request`,
       _template:'table',
       _replyto:String(data.get('email')),
       _honey:String(data.get('website') || ''),
@@ -129,7 +151,9 @@
     const button=document.querySelector('#submit-request');
     button.disabled=false;
     button.textContent='Request Service';
+    updatePropertyType();
   });
+  form.addEventListener('input', () => { fallback.hidden = true; });
   if (query.get('submitted') === '1' && emailDelivery?.verified === true) {
     showStatus('Your request has been submitted for email processing. This does not confirm an appointment. Call if you need to confirm receipt or discuss urgent help.','success');
   }
@@ -165,6 +189,7 @@
       if (!response.ok || result?.delivered !== true) throw new Error('Delivery not confirmed');
       fallback.hidden = true;
       form.reset();
+      updatePropertyType();
       document.querySelector('#photo-status').textContent = '';
       started = Date.now();
       showStatus('Your service request was submitted. Your appointment is not yet confirmed. Contact Eliteflow directly to confirm availability; for urgent help, call (571) 682-5754.','success');

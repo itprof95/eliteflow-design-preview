@@ -1,0 +1,22 @@
+/* Shared destinations for the selected website's simplified navigation. */
+.page-jump-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.page-jump-links a{display:inline-flex;align-items:center;justify-content:space-between;gap:22px;min-height:46px;padding:10px 17px;border:1px solid #aebed4;border-radius:5px;font-size:13px;font-weight:600;color:var(--navy);background:#fff;transition:background .2s,border-color .2s}
+.page-jump-links a:hover{background:#e3ecfa;border-color:var(--blue)}
+.page-jump-links a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+/* The base stylesheet already reserves the sticky header with scroll-padding. */
+#all-services,#commercial-plumbing,#industries,#service-area,#project-gallery{scroll-margin-top:5px}
+.commercial-hero h2{font-size:clamp(42px,4vw,60px);max-width:620px}
+.about-coverage{background:#eef3fa;border-top:1px solid var(--line)}
+.about-coverage .map-container{background:#fff}
+.about-projects{border-top:1px solid var(--line)}
+.about-projects p:not(.eyebrow){font-size:15px;line-height:1.9}
+.about-projects .text-link{margin-top:22px}
+[data-page="projects"] .page-heading .text-link{margin-top:25px}
+[data-page="projects"] .project-section{border-top:0}
+@media(max-width:850px){.commercial-hero h2{font-size:46px;max-width:660px}}
+@media(max-width:600px){
+ .page-jump-links{gap:8px;margin-top:24px}
+ .page-jump-links a{font-size:12px;padding:10px 13px;gap:14px}
+ .commercial-hero h2{font-size:39px}
+ .about-projects p:not(.eyebrow){font-size:13px}
+}

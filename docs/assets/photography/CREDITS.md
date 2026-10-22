@@ -206,3 +206,13 @@ Title: A fitted chrome bathroom faucet above a white washbasin
 Source: https://unsplash.com/photos/a-bathroom-with-a-sink-and-a-mirror-6tDSsJToFD4
 License: Unsplash License — https://unsplash.com/license
 Changes: Cropped where needed, resized and converted to WebP. Display crops vary by screen.
+
+- Finished commercial washroom: Brixiv, [Sinks in Bathroom](https://www.pexels.com/photo/sinks-in-bathroom-17461785/), [Pexels License](https://www.pexels.com/license/). Illustrative; not represented as an Eliteflow project. Resized WebP derivatives.
+
+- Finished premium commercial restroom: Paris, [Pexels source](https://www.pexels.com/photo/luxury-bathroom-27581257/), [Pexels License](https://www.pexels.com/license/). Illustrative; resized WebP derivatives, display crops vary.
+
+## Commercial slideshow additions
+
+- Copper Water Pipes and Water Line Shutoff — Tony Webster. [Original source](https://commons.wikimedia.org/wiki/File:Copper_Water_Pipes_and_Water_Line_Shutoff.jpg). [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/). Resized WebP copies; display crops vary. 
+- Lochinvar Commercial Water Heater and Boiler System — Chris Putman / U.S. Army Corps of Engineers. [Original source](https://www.dvidshub.net/image/9976413/lochinvar-commercial-water-heater-and-boiler-system). [Public domain (United States)](https://www.dvidshub.net/about/copyright). Resized WebP copies; display crops vary. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement. 
+- 2006-02-15 Piping — Roger McLassus. [Original source](https://commons.wikimedia.org/wiki/File:2006-02-15_Piping.jpg). [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Resized WebP copies; display crops vary. All adapted image files retain CC BY-SA 3.0. 

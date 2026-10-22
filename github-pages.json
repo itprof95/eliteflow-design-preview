@@ -10,8 +10,12 @@
   "website_designs": 1,
   "selected_option": 1,
   "website_pages": 18,
-  "checked_links_assets_fragments": 1176,
+  "legacy_redirects": {
+    "/commercial-plumbing/": "/services/#commercial-plumbing",
+    "/service-area/": "/about/#service-area"
+  },
+  "checked_links_assets_fragments": 1100,
   "automatic_customer_submissions_enabled": false,
-  "files": 237,
-  "homepage_sha256": "3ab13801e777ecf0d60ee918df837816fa6c1c50d14d8ed2f5c44f37f472e454"
+  "files": 263,
+  "homepage_sha256": "a60db2a18f31cedc0cb6c2f74b367b6f57dc9f3639fa623e9ccb7ce4a6aebbf1"
 }

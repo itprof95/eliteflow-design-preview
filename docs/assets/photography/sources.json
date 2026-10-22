@@ -1094,5 +1094,179 @@
         "bytes": 25138
       }
     }
+  },
+  "finished-commercial-washroom": {
+    "author": "Brixiv",
+    "source": "https://www.pexels.com/photo/sinks-in-bathroom-17461785/",
+    "alt": "A finished commercial washroom with three fitted sinks, chrome faucets and tiled walls",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "illustrative": true,
+    "modifications": "Resized and converted to WebP. Display crop varies by screen.",
+    "variants": {
+      "480": {
+        "file": "finished-commercial-washroom-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 19114
+      },
+      "800": {
+        "file": "finished-commercial-washroom-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 42548
+      },
+      "1400": {
+        "file": "finished-commercial-washroom-1400.webp",
+        "width": 1400,
+        "height": 933,
+        "bytes": 93390
+      },
+      "2000": {
+        "file": "finished-commercial-washroom-2000.webp",
+        "width": 2000,
+        "height": 1333,
+        "bytes": 159948
+      }
+    }
+  },
+  "commercial-premium-washroom": {
+    "author": "Paris",
+    "source": "https://www.pexels.com/photo/luxury-bathroom-27581257/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "illustrative": true,
+    "alt": "A finished commercial restroom with three installed sinks, brass faucets, marble counters and large mirrors",
+    "modifications": "Resized and converted to WebP; display crops vary.",
+    "variants": {
+      "480": {
+        "file": "commercial-premium-washroom-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 48034
+      },
+      "800": {
+        "file": "commercial-premium-washroom-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 117984
+      },
+      "1400": {
+        "file": "commercial-premium-washroom-1400.webp",
+        "width": 1400,
+        "height": 1867,
+        "bytes": 289230
+      },
+      "2000": {
+        "file": "commercial-premium-washroom-2000.webp",
+        "width": 2000,
+        "height": 2667,
+        "bytes": 538216
+      }
+    }
+  },
+  "commercial-copper-valves": {
+    "author": "Tony Webster",
+    "source": "https://commons.wikimedia.org/wiki/File:Copper_Water_Pipes_and_Water_Line_Shutoff.jpg",
+    "title": "Copper Water Pipes and Water Line Shutoff",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "alt": "Copper water pipes, soldered fittings and a shutoff valve",
+    "variants": {
+      "480": {
+        "file": "commercial-copper-valves-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 19268
+      },
+      "800": {
+        "file": "commercial-copper-valves-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 38614
+      },
+      "1400": {
+        "file": "commercial-copper-valves-1400.webp",
+        "width": 1400,
+        "height": 1050,
+        "bytes": 81694
+      },
+      "2000": {
+        "file": "commercial-copper-valves-2000.webp",
+        "width": 2000,
+        "height": 1500,
+        "bytes": 134302
+      }
+    },
+    "illustrative": true,
+    "modifications": "Resized and converted to WebP; website display crops vary by screen."
+  },
+  "commercial-water-heater-plant": {
+    "author": "Chris Putman / U.S. Army Corps of Engineers",
+    "source": "https://www.dvidshub.net/image/9976413/lochinvar-commercial-water-heater-and-boiler-system",
+    "title": "Lochinvar Commercial Water Heater and Boiler System",
+    "license": "Public domain (United States)",
+    "licenseUrl": "https://www.dvidshub.net/about/copyright",
+    "alt": "Large commercial water-heater equipment with storage tanks, connecting pipework and venting",
+    "variants": {
+      "480": {
+        "file": "commercial-water-heater-plant-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 29654
+      },
+      "800": {
+        "file": "commercial-water-heater-plant-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 61722
+      },
+      "1000": {
+        "file": "commercial-water-heater-plant-1000.webp",
+        "width": 1000,
+        "height": 667,
+        "bytes": 87802
+      }
+    },
+    "illustrative": true,
+    "modifications": "Resized and converted to WebP; website display crops vary by screen.",
+    "nonEndorsement": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+  },
+  "commercial-building-pipework": {
+    "author": "Roger McLassus",
+    "source": "https://commons.wikimedia.org/wiki/File:2006-02-15_Piping.jpg",
+    "title": "2006-02-15 Piping",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": "Rows of overhead pipework, valves and insulated ducts in a large building equipment room",
+    "variants": {
+      "480": {
+        "file": "commercial-building-pipework-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 28364
+      },
+      "800": {
+        "file": "commercial-building-pipework-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 61018
+      },
+      "1400": {
+        "file": "commercial-building-pipework-1400.webp",
+        "width": 1400,
+        "height": 1050,
+        "bytes": 136588
+      },
+      "2000": {
+        "file": "commercial-building-pipework-2000.webp",
+        "width": 2000,
+        "height": 1500,
+        "bytes": 222734
+      }
+    },
+    "illustrative": true,
+    "modifications": "Resized and converted to WebP; website display crops vary by screen.",
+    "derivativeLicense": "CC BY-SA 3.0"
   }
 }
