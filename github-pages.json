@@ -14,8 +14,8 @@
     "/commercial-plumbing/": "/services/#commercial-plumbing",
     "/service-area/": "/about/#service-area"
   },
-  "checked_links_assets_fragments": 1100,
+  "checked_links_assets_fragments": 1098,
   "automatic_customer_submissions_enabled": false,
   "files": 263,
-  "homepage_sha256": "a60db2a18f31cedc0cb6c2f74b367b6f57dc9f3639fa623e9ccb7ce4a6aebbf1"
+  "homepage_sha256": "985597eda52e2d03277bdb084d2db89b43725db1ad81adf11cdde49d6a0e307a"
 }
