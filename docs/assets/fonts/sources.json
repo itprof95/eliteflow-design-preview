@@ -1,0 +1,10 @@
+{
+  "family": "Inter",
+  "weights": "100-900",
+  "style": "normal",
+  "subset": "latin",
+  "cssSource": "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap",
+  "fontSource": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+  "licenseSource": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+  "license": "SIL Open Font License 1.1"
+}

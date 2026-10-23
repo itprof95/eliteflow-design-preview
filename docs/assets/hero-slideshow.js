@@ -154,7 +154,6 @@
   render();
   if (!preference.matches) {
     const copy = hero.querySelector('.local-hero-copy');
-    copy.querySelector('.eyebrow').classList.add('hero-copy-enter');
     copy.querySelector('h1').classList.add('hero-copy-enter', 'hero-copy-heading');
     copy.querySelector('p:not(.eyebrow)').classList.add('hero-copy-enter', 'hero-copy-description');
     hero.querySelector('.local-immersive-tag')?.classList.add('hero-copy-enter', 'hero-copy-note');
